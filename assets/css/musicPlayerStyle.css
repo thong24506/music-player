@@ -1,0 +1,195 @@
+
+.music-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.now-playing,
+.now-playing-header, 
+.now-playing-music-img,
+.nav {
+    margin-top: 12px;
+}
+
+.now-playing {
+    color: #df555f;
+}
+
+.now-playing-header {
+    color: #333;
+}
+
+.now-playing-music-img {
+    background-image: url('https://media.vov.vn/sites/default/files/styles/large/public/2022-11/dscf1362.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nav {
+    margin-top: 24px;
+}
+
+.nav-list {
+    width: 100vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    opacity: 0.7;
+}
+
+.nav-item i {
+    font-size: 2rem;
+    color: #555;
+}
+
+.nav-item-forward-left i {
+    transform: rotate(0.5turn);
+}
+
+.nav-item-play {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#db1d2a; 
+}
+.nav-item-play i {
+    color: white;
+    font-size: 2.6rem;
+}
+
+.btn-agian.color i,
+.btn-random.color i {
+    color: #f35b5b;
+}
+
+
+
+.now-playing-line {
+    appearance: none;
+    width: var(--line-width);
+    height: 4px;
+    background-color: #ccc;
+    margin: 24px 0;
+    outline: none;
+    transition: opacity 0.2s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.now-playing-line:hover {
+    opacity: 1;
+}
+
+.now-playing-line::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 4px;
+    background: #db1d2a;
+}
+
+.now-playing-line::-moz-range-thumb {
+    width: 12px;
+    height: 4px;
+    background: #db1d2a;
+}
+
+.music-warehouse {
+    display: flex;
+    justify-content: center;
+    background-color: #e3e3e3;
+}
+
+.music-list {
+    width: var(--line-width);
+    list-style-type: none;
+}
+
+.music-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 0;
+    margin: 16px 0;
+    border-radius: 4px;
+    box-shadow: 0 3px 2px rgb(208, 207, 207);
+    cursor: pointer;
+}
+
+.music-item.active {
+    background-color: #db1d2a;
+    cursor: unset;
+}
+
+.music-item.active .music-name,
+.music-item.active .music-singer,
+.music-item.active .music-band, 
+.music-item.active .music-ellipsis {
+    color: #fff;
+}
+
+.music-item.active .music-ellipsis {
+    cursor: pointer;
+}
+
+.music-img {
+    width: var(--music-img-width);
+    height: var(--music-img-height);
+    background-image: url('https://media.vov.vn/sites/default/files/styles/large/public/2022-11/dscf1362.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 22px;
+}
+
+.music-information {
+    flex: 1;
+    margin: 0 24px;
+}
+
+.music-name {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+
+.music-singer,
+.music-band {
+    color: #888;
+}
+
+.music-ellipsis {
+    margin-right: 22px;
+    font-size: 2.4rem;
+    color: #888;
+}
+
+.music-ellipsis:hover {
+    opacity: 0.6;
+}

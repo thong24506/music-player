@@ -1,0 +1,17 @@
+:root {
+    --line-width: calc(100vw - 50px);
+    --music-img-width: 50px; 
+    --music-img-height: 50px; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:  'Calibri', 'Trebuchet MS', sans-serif ;
+}
